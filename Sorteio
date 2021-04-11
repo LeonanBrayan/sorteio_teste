@@ -1,1 +1,16 @@
-print('ola, mundo.')
+from random import randint
+from time import sleep
+
+num = int(input('Quantidade de números a serem sorteados - '))
+escolhido = randint(0, num)
+print(' PROCESSANDO')
+sleep(1)
+print('*')
+sleep(1)
+print('*')
+sleep(1)
+print('*')
+sleep(1)
+print('-=' *12)
+print('O número sorteado foi \033[31;47m{}\033[m'.format(escolhido))
+print('-='*12)
